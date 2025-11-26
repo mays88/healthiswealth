@@ -247,7 +247,7 @@ const Page: FC = () => {
             {/* ABOUT */}
             <section id="about" className="py-20 bg-white">
                 <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                    <motion.div
+                    {/* <motion.div
                         initial="hidden"
                         whileInView="show"
                         variants={fadeUp}
@@ -255,9 +255,9 @@ const Page: FC = () => {
                         <Image
                             src={Owner}
                             alt="Owner"
-                            className="rounded-2xl shadow-lg w-full h-auto object-cover"
+                            className="rounded-2xl shadow-lg w-full h-[-50%] object-cover"
                         />
-                    </motion.div>
+                    </motion.div> */}
 
                     <motion.div
                         initial={{ opacity: 0, x: 12 }}
