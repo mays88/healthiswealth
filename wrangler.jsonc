@@ -1,5 +1,6 @@
 {
     "name": "healthiswealth",
     "main": ".open-next/worker.js",
+    "compatibility_date": "2025-11-26",
     "assets": { "directory": ".open-next/assets", "binding": "ASSETS" }
 }
