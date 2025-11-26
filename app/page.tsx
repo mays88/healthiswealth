@@ -4,37 +4,39 @@
 import { FC, useRef } from "react";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
+import BlackEdition from "@/products/BlackEdition.png";
+import Owner from "@/products/owner.png";
 
 const products = [
     {
         id: 1,
         name: "Black Edition",
-        img: "/healthiswealth/products/BlackEdition.png",
+        img: BlackEdition,
     },
     {
         id: 2,
         name: "Protein Bar",
-        img: "/healthiswealth/products/BlackEdition.png",
+        img: BlackEdition,
     },
     {
         id: 3,
         name: "Sparkling Water",
-        img: "/healthiswealth/products/BlackEdition.png",
+        img: BlackEdition,
     },
     {
         id: 4,
         name: "Trail Mix",
-        img: "/healthiswealth/products/BlackEdition.png",
+        img: BlackEdition,
     },
     {
         id: 5,
         name: "Nut Butter Pack",
-        img: "/healthiswealth/products/BlackEdition.png",
+        img: BlackEdition,
     },
     {
         id: 6,
         name: "Fruit Cup",
-        img: "/healthiswealth/products/BlackEdition.png",
+        img: BlackEdition,
     },
 ];
 
@@ -251,11 +253,9 @@ const Page: FC = () => {
                         variants={fadeUp}
                         viewport={{ once: true }}>
                         <Image
-                            src="/healthiswealth/products/IMG_0200.PNG"
+                            src={Owner}
                             alt="Owner"
-                            className="rounded-2xl shadow-lg w-full h-80 object-cover"
-                            width={250}
-                            height={500}
+                            className="rounded-2xl shadow-lg w-full h-auto object-cover"
                         />
                     </motion.div>
 
