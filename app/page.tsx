@@ -126,7 +126,7 @@ const Page: FC = () => {
                             allowFullScreen
                             title="YouTube Video Player" // Add a descriptive title for accessibility
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            className="lg:w-[1100] h-[600]"
+                            className="w-full h-[300px] sm:h-[500px] md:h-[400px] lg:h-[600px]"
                         />
                         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-black/80 drop-shadow-lg ">
                             Health Is Wealth
