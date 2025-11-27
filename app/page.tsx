@@ -5,38 +5,49 @@ import { FC, useRef } from "react";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 import BlackEdition from "@/products/BlackEdition.png";
+import Noka from "@/products/Noka.png";
+import Chompz from "@/products/chomps.png";
+import Essentia from "@/products/essentia.png";
+import Hint from "@/products/Hint.png";
+import Poppi from "@/products/poppi.png";
 import Owner from "@/products/owner.png";
 
 const products = [
     {
         id: 1,
-        name: "Black Edition",
+        name: "Huel - Black Edition",
         img: BlackEdition,
+        description: "No prep, no blender, no slowing down.",
     },
     {
         id: 2,
-        name: "Protein Bar",
-        img: BlackEdition,
+        name: "Noka - Superfood Smoothie",
+        img: Noka,
+        description: "Healthy snacks for adults and kids",
     },
     {
         id: 3,
-        name: "Sparkling Water",
-        img: BlackEdition,
+        name: "Chomps - Beef Stick",
+        img: Chompz,
+        description: "Grassfed and Finished Beef",
     },
     {
         id: 4,
-        name: "Trail Mix",
-        img: BlackEdition,
+        name: "Essentia - Hydroboost",
+        img: Essentia,
+        description: "Suppercharged Hydration",
     },
     {
         id: 5,
-        name: "Nut Butter Pack",
-        img: BlackEdition,
+        name: "Hint - Fall in love with water",
+        img: Hint,
+        description: "Water Infused with Fruit Essences",
     },
     {
         id: 6,
-        name: "Fruit Cup",
-        img: BlackEdition,
+        name: "Poppi - Prebiotic Soda",
+        img: Poppi,
+        description: "Soda's Back, but Better",
     },
 ];
 
@@ -218,8 +229,7 @@ const Page: FC = () => {
                                             {p.name}
                                         </h3>
                                         <p className="text-sm text-gray-500 mt-1">
-                                            Nutritious option — low sugar, high
-                                            satisfaction.
+                                            {p.description}
                                         </p>
                                         <div className="mt-4 flex items-center justify-between">
                                             <span className="text-sm font-medium text-green-600">
