@@ -257,7 +257,7 @@ const Page: FC = () => {
             {/* ABOUT */}
             <section id="about" className="py-20 bg-white">
                 <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                    {/* <motion.div
+                    <motion.div
                         initial="hidden"
                         whileInView="show"
                         variants={fadeUp}
@@ -267,16 +267,14 @@ const Page: FC = () => {
                             alt="Owner"
                             className="rounded-2xl shadow-lg w-full h-[-50%] object-cover"
                         />
-                    </motion.div> */}
+                    </motion.div>
 
                     <motion.div
                         initial={{ opacity: 0, x: 12 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         className="">
-                        <h3 className="text-2xl font-extrabold">
-                            About the Owner
-                        </h3>
+                        <h3 className="text-2xl font-extrabold">About Us</h3>
                         <p className="mt-4 text-gray-600 leading-relaxed">
                             Health Is Wealth was founded to make healthy choices
                             easier and more accessible. As a community-focused
