@@ -173,7 +173,7 @@ const Page: FC = () => {
     };
 
     return (
-        <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 text-gray-900">
+        <main className="min-h-screen bg-linear-to-b from-white to-gray-50 text-gray-900">
             {/* NAVBAR */}
             <motion.nav
                 initial={{ opacity: 0, y: -12 }}
@@ -292,7 +292,7 @@ const Page: FC = () => {
                                     <motion.div
                                         key={p.id}
                                         variants={fadeUp}
-                                        className="min-w-[200px] sm:min-w-[240px] bg-white rounded-2xl shadow p-4">
+                                        className="min-w-[200px] sm:min-w-60 bg-white rounded-2xl shadow p-4">
                                         <div className="w-full aspect-square rounded-xl overflow-hidden bg-gray-100">
                                             <Image
                                                 src={p.img}
