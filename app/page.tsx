@@ -24,7 +24,6 @@ import SalmonJerky from "@/products/salmonjerky.png";
 import SmashFoods from "@/products/smashfoods.png";
 import StoneySmoothies from "@/products/stoneysmoothies.png";
 import ThatsItBars from "@/products/thatsitbars.png";
-import MidBanner from "@/products/midbanner.png";
 
 const products = [
     {
@@ -53,15 +52,15 @@ const products = [
     },
     {
         id: 5,
-        name: "KAIMANA Salmon Jerky",
+        name: "KAIMANA Salmon Jerky - Hawaiian snack",
         img: SalmonJerky,
-        description: "Water Infused with Fruit Essences",
+        description: "Hand-cut to preserve its natural texture and flavor",
     },
     {
         id: 6,
         name: "Brooklyn Biltlong Jerky",
         img: BrooklynJerky,
-        description: "Soda's Back, but Better",
+        description: "Never Cooked, Naturally Tender",
     },
     {
         id: 7,
@@ -77,69 +76,69 @@ const products = [
     },
     {
         id: 9,
-        name: "RxBar",
+        name: "RxBar - No B.S.",
         img: RxBar,
-        description: "Water Infused with Fruit Essences",
+        description: "Less is more delicious",
     },
     {
         id: 10,
         name: "Organic Fruit Chews",
         img: OrgChews,
-        description: "Soda's Back, but Better",
+        description: "Twisted Fruit Bites",
     },
     {
         id: 11,
-        name: "Prevail Jerky",
+        name: "Prevail Jerky - Never Settle, Always...",
         img: PrevailJerky,
-        description: "Water Infused with Fruit Essences",
+        description: "No Preservatives, no compromise, no junk.",
     },
     {
         id: 12,
-        name: "OliPop",
+        name: "OliPop - A New Kind of Soda",
         img: OliPop,
-        description: "Soda's Back, but Better",
+        description: "Healthy Meets Delicious",
     },
     {
         id: 13,
-        name: "That's It Bars",
+        name: "That's It - .",
         img: ThatsItBars,
-        description: "Water Infused with Fruit Essences",
+        description: "Real Fruit Bars",
     },
     {
         id: 14,
         name: "Pure Organic Fruit Bars",
         img: PureOrgBars,
-        description: "Soda's Back, but Better",
+        description: "Way too good, to be this good",
     },
     {
         id: 15,
         name: "StoneyField Organic Smoothie",
         img: StoneySmoothies,
-        description: "Water Infused with Fruit Essences",
+        description: "Good on purpose",
     },
     {
         id: 16,
-        name: "Lesserevil Popcorn",
+        name: "Lesserevil Popcorn - Feel-Good Flavor",
         img: LesserEvil,
-        description: "Soda's Back, but Better",
+        description: "Simple Acts, Clean Snacks",
     },
     {
         id: 17,
-        name: "Smash Foods",
+        name: "Smash Foods - Delicious and Nutritious",
         img: SmashFoods,
-        description: "Soda's Back, but Better",
+        description: "We didn't invent jam, We just reinvented jam",
     },
     {
         id: 18,
-        name: "SevenSunday Cereal Snackies",
+        name: "SevenSunday Cereal Snackies - Keep it Real",
         img: SevenSunday,
-        description: "Water Infused with Fruit Essences",
+        description: "Eat Real food",
     },
     {
         id: 19,
         name: "All Wello Cold Pressed Juice",
         img: AllWello,
-        description: "Soda's Back, but Better",
+        description: "Organic and All Natural Because You Come First",
     },
 ];
 
