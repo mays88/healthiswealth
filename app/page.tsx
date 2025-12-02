@@ -1,9 +1,9 @@
-// app/page.tsx
 "use client";
 
 import { FC, useRef } from "react";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
+
 import BlackEdition from "@/products/BlackEdition.png";
 import Noka from "@/products/Noka.png";
 import Chompz from "@/products/chomps.png";
@@ -52,9 +52,9 @@ const products = [
     },
     {
         id: 5,
-        name: "KAIMANA Salmon Jerky - Hawaiian snack",
+        name: "KAIMANA Salmon Jerky",
         img: SalmonJerky,
-        description: "Hand-cut to preserve its natural texture and flavor",
+        description: "Hand-cut, preserved natural flavor",
     },
     {
         id: 6,
@@ -64,22 +64,17 @@ const products = [
     },
     {
         id: 7,
-        name: "Hint - Fall in love with water",
+        name: "Hint Water",
         img: Hint,
         description: "Water Infused with Fruit Essences",
     },
     {
         id: 8,
-        name: "Poppi - Prebiotic Soda",
+        name: "Poppi Prebiotic Soda",
         img: Poppi,
         description: "Soda's Back, but Better",
     },
-    {
-        id: 9,
-        name: "RxBar - No B.S.",
-        img: RxBar,
-        description: "Less is more delicious",
-    },
+    { id: 9, name: "RxBar", img: RxBar, description: "Less is more delicious" },
     {
         id: 10,
         name: "Organic Fruit Chews",
@@ -88,19 +83,19 @@ const products = [
     },
     {
         id: 11,
-        name: "Prevail Jerky - Never Settle, Always...",
+        name: "Prevail Jerky",
         img: PrevailJerky,
-        description: "No Preservatives, no compromise, no junk.",
+        description: "No preservatives, no compromise",
     },
     {
         id: 12,
-        name: "OliPop - A New Kind of Soda",
+        name: "OliPop",
         img: OliPop,
         description: "Healthy Meets Delicious",
     },
     {
         id: 13,
-        name: "That's It - .",
+        name: "That's It Bars",
         img: ThatsItBars,
         description: "Real Fruit Bars",
     },
@@ -108,55 +103,61 @@ const products = [
         id: 14,
         name: "Pure Organic Fruit Bars",
         img: PureOrgBars,
-        description: "Way too good, to be this good",
+        description: "Too good to be this good",
     },
     {
         id: 15,
-        name: "StoneyField Organic Smoothie",
+        name: "StoneyField Smoothies",
         img: StoneySmoothies,
         description: "Good on purpose",
     },
     {
         id: 16,
-        name: "Lesserevil Popcorn - Feel-Good Flavor",
+        name: "LesserEvil Popcorn",
         img: LesserEvil,
         description: "Simple Acts, Clean Snacks",
     },
     {
         id: 17,
-        name: "Smash Foods - Delicious and Nutritious",
+        name: "Smash Foods Jam",
         img: SmashFoods,
-        description: "We didn't invent jam, We just reinvented jam",
+        description: "Reinvented jam",
     },
     {
         id: 18,
-        name: "SevenSunday Cereal Snackies - Keep it Real",
+        name: "Seven Sunday Snackies",
         img: SevenSunday,
-        description: "Eat Real food",
+        description: "Eat Real Food",
     },
     {
         id: 19,
-        name: "All Wello Cold Pressed Juice",
+        name: "All Wello Juice",
         img: AllWello,
-        description: "Organic and All Natural Because You Come First",
+        description: "Organic, All Natural",
     },
 ];
 
 const container: Variants = {
     hidden: {},
-    show: {
-        transition: { staggerChildren: 0.08 },
-    },
+    show: { transition: { staggerChildren: 0.08 } },
 };
 
 const fadeUp: Variants = {
     hidden: { opacity: 0, y: 18 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.6, ease: "easeOut" },
+    },
 };
 
 const heroText: Variants = {
     hidden: { opacity: 0, y: -8 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "circOut" } },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.8, ease: "circOut" },
+    },
 };
 
 const Page: FC = () => {
@@ -172,14 +173,14 @@ const Page: FC = () => {
     };
 
     return (
-        <main className="min-h-screen bg-linear-to-b from-white to-gray-50 text-gray-900">
+        <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 text-gray-900">
             {/* NAVBAR */}
             <motion.nav
                 initial={{ opacity: 0, y: -12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-6xl bg-white/70 backdrop-blur-md rounded-2xl shadow-md border border-gray-200">
-                <div className="flex items-center justify-between px-6 py-3">
+                className="fixed top-3 left-1/2 -translate-x-1/2 z-50 w-[94%] max-w-6xl bg-white/70 backdrop-blur-md rounded-2xl shadow-md border border-gray-200">
+                <div className="flex items-center justify-between px-4 sm:px-6 py-3">
                     <div className="flex items-center gap-3">
                         <div className="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white font-bold shadow">
                             HIW
@@ -204,6 +205,7 @@ const Page: FC = () => {
                         <a href="#contact" className="hover:text-gray-700">
                             Contact
                         </a>
+
                         <a
                             href="#contact"
                             className="px-4 py-2 bg-green-600 text-white rounded-lg shadow hover:brightness-95">
@@ -216,112 +218,98 @@ const Page: FC = () => {
             {/* HERO */}
             <section
                 id="hero"
-                className="w-full h-full relative overflow-hidden mb-10">
-                <div className="absolute inset-0 bg-linear-to-b from-black/30 via-black/10 to-white/0 " />
-
-                <div className="relative z-10 max-w-6xl mx-auto h-full flex items-center px-6">
+                className="w-full h-full relative overflow-hidden pt-28 pb-12 px-4">
+                <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
                     <motion.div
                         initial="hidden"
                         animate="show"
                         variants={heroText}
-                        className="max-w-2xl mt-24">
-                        <iframe
-                            src="https://www.youtube.com/embed/APj9YQ5J0mo" // Replace VIDEO_ID with the actual YouTube video ID
-                            allowFullScreen
-                            title="YouTube Video Player" // Add a descriptive title for accessibility
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            className="w-full h-[250px] sm:h-[500px] md:h-[400px] lg:h-[600px]"
-                        />
-                        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-black/80 drop-shadow-lg ">
+                        className="w-full">
+                        <div className="w-full max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-lg">
+                            <iframe
+                                src="https://www.youtube.com/embed/APj9YQ5J0mo"
+                                allowFullScreen
+                                title="YouTube Video Player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                className="w-full h-full"
+                            />
+                        </div>
+
+                        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold mt-6 text-black/80">
                             Health Is Wealth
                         </h1>
-                        <p className="mt-4 text-lg text-black/50 max-w-xl drop-shadow">
-                            Modern vending, curated for healthy choices. We
-                            install and manage smart vending machines stocked
-                            with organic, high-protein, and low-sugar snacks for
+
+                        <p className="mt-4 text-base sm:text-lg text-black/60 max-w-2xl mx-auto">
+                            Modern vending with smart, healthy options for
                             schools, offices, gyms, and community spaces.
                         </p>
-                        <div className="mt-6 flex gap-4">
+
+                        <div className="mt-6 flex flex-wrap justify-center gap-4">
                             <a
                                 href="#contact"
-                                className="inline-flex items-center gap-3 bg-black text-white/90 px-5 py-3 rounded-lg font-medium shadow hover:scale-[1.01] transition">
+                                className="inline-flex items-center bg-black text-white px-6 py-3 rounded-lg shadow font-medium">
                                 Get a Quote
                             </a>
-                            {/* <a
-                                href="#products"
-                                className="inline-flex items-center gap-3 border border-black/60 text-black px-4 py-3 rounded-lg backdrop-blur-sm hover:opacity-90 transition">
-                                See Products
-                            </a> */}
                         </div>
                     </motion.div>
                 </div>
-
-                {/* subtle overlay graphic */}
-                <motion.div
-                    aria-hidden
-                    initial={{ opacity: 0.08, scale: 1 }}
-                    animate={{ opacity: 0.08, scale: 1.02 }}
-                    transition={{
-                        duration: 8,
-                        repeat: Infinity,
-                        repeatType: "reverse",
-                    }}
-                    className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-green-400/20 via-transparent to-transparent"
-                />
             </section>
 
-            {/* PRODUCTS ROW */}
-            <section id="products" className="">
-                <div className="max-w-6xl mx-auto px-6">
+            {/* PRODUCT SCROLLER */}
+            <section id="products" className="py-10">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6">
                     <motion.h2
                         initial={{ opacity: 0, y: 8 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-3xl font-extrabold text-gray-800">
+                        className="text-2xl sm:text-3xl font-extrabold">
                         Curated Healthy Picks
                     </motion.h2>
-                    <p className="mt-2 text-gray-600 max-w-2xl">
+                    <p className="text-gray-600 mt-2 max-w-xl">
                         Hand-picked snacks and drinks designed to fuel focus and
                         wellness.
                     </p>
 
                     <div className="mt-8 relative">
+                        {/* Left button */}
                         <button
-                            aria-label="scroll left"
                             onClick={() => scroll(-1)}
-                            className="absolute left-0 top-1/2 -translate-y-1/2 z-20 p-2 bg-white rounded-full shadow">
+                            className="absolute left-0 top-1/2 -translate-y-1/2 z-20 p-2 bg-white rounded-full shadow hidden sm:block">
                             ‹
                         </button>
 
+                        {/* Horizontal scroll */}
                         <div
                             ref={rowRef}
-                            className="overflow-x-auto no-scrollbar scroll-smooth px-4">
+                            className="overflow-x-auto no-scrollbar px-2 scroll-smooth">
                             <motion.div
                                 variants={container}
                                 initial="hidden"
                                 whileInView="show"
                                 viewport={{ once: true }}
-                                className="flex gap-6 py-6 items-stretch">
+                                className="flex gap-6 py-6">
                                 {products.map((p) => (
                                     <motion.div
                                         key={p.id}
                                         variants={fadeUp}
-                                        className="min-w-[220px] bg-white rounded-2xl shadow-md p-4 shrink-0">
-                                        <div className="w-full h-40 rounded-lg overflow-hidden bg-gray-100">
+                                        className="min-w-[200px] sm:min-w-[240px] bg-white rounded-2xl shadow p-4">
+                                        <div className="w-full aspect-square rounded-xl overflow-hidden bg-gray-100">
                                             <Image
                                                 src={p.img}
                                                 alt={p.name}
-                                                className="w-full h-full object-cover"
                                                 width={400}
-                                                height={300}
+                                                height={400}
+                                                className="w-full h-full object-cover"
                                             />
                                         </div>
+
                                         <h3 className="mt-3 font-semibold text-gray-800">
                                             {p.name}
                                         </h3>
                                         <p className="text-sm text-gray-500 mt-1">
                                             {p.description}
                                         </p>
+
                                         <div className="mt-4 flex items-center justify-between">
                                             <span className="text-sm font-medium text-green-600">
                                                 In machine
@@ -335,10 +323,10 @@ const Page: FC = () => {
                             </motion.div>
                         </div>
 
+                        {/* Right button */}
                         <button
-                            aria-label="scroll right"
                             onClick={() => scroll(1)}
-                            className="absolute right-0 top-1/2 -translate-y-1/2 z-20 p-2 bg-white rounded-full shadow">
+                            className="absolute right-0 top-1/2 -translate-y-1/2 z-20 p-2 bg-white rounded-full shadow hidden sm:block">
                             ›
                         </button>
                     </div>
@@ -346,8 +334,8 @@ const Page: FC = () => {
             </section>
 
             {/* ABOUT */}
-            <section id="about" className="py-20 bg-white">
-                <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <section id="about" className="py-16 bg-white">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                     <motion.div
                         initial="hidden"
                         whileInView="show"
@@ -356,28 +344,28 @@ const Page: FC = () => {
                         <Image
                             src={Owner}
                             alt="Owner"
-                            className="rounded-2xl shadow-lg w-full h-[-50%] object-cover"
+                            className="rounded-2xl shadow-lg w-full object-cover"
                         />
                     </motion.div>
 
                     <motion.div
                         initial={{ opacity: 0, x: 12 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        className="">
-                        <h3 className="text-2xl font-extrabold">About Us</h3>
+                        viewport={{ once: true }}>
+                        <h3 className="text-2xl sm:text-3xl font-extrabold">
+                            About Us
+                        </h3>
+
                         <p className="mt-4 text-gray-600 leading-relaxed">
-                            Health Is Wealth was founded to make healthy choices
-                            easier and more accessible. As a community-focused
-                            operator, we partner with schools, fitness centers,
-                            and local businesses to offer transparent nutrition
-                            labeling, allergy-friendly options, and smart
-                            payment tech.
+                            We make healthy choices easier by bringing smart
+                            vending solutions to schools, fitness centers, and
+                            workplaces. Transparent labeling, allergy-friendly
+                            options, and contactless tech included.
                         </p>
 
                         <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600">
-                            <li>• Locally-sourced selections when possible</li>
-                            <li>• Cashless & contactless payments</li>
+                            <li>• Locally-sourced when possible</li>
+                            <li>• Touchless payments</li>
                             <li>• Routine restock & hygiene checks</li>
                             <li>• Flexible partnership terms</li>
                         </ul>
@@ -386,16 +374,17 @@ const Page: FC = () => {
             </section>
 
             {/* CONTACT */}
-            <section id="contact" className="py-20">
-                <div className="max-w-4xl mx-auto px-6">
+            <section id="contact" className="py-16">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6">
                     <motion.h3
                         initial={{ opacity: 0, y: 6 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        className="text-2xl font-extrabold">
+                        className="text-2xl sm:text-3xl font-extrabold">
                         Contact & Requests
                     </motion.h3>
+
                     <p className="mt-2 text-gray-600">
-                        Tell us about your location and we&apos;ll recommend the
+                        Tell us about your location and we’ll recommend the
                         right machine and product mix.
                     </p>
 
@@ -417,6 +406,7 @@ const Page: FC = () => {
                                 type="email"
                                 className="p-3 border rounded-lg"
                             />
+
                             <motion.select
                                 variants={fadeUp}
                                 className="p-3 border rounded-lg">
@@ -425,6 +415,7 @@ const Page: FC = () => {
                                 <option>Request Product Mix</option>
                                 <option>Partnership</option>
                             </motion.select>
+
                             <motion.input
                                 variants={fadeUp}
                                 placeholder="Location (City, School, Office)"
@@ -439,13 +430,14 @@ const Page: FC = () => {
                             className="w-full mt-4 p-3 border rounded-lg"
                         />
 
-                        <div className="mt-4 flex gap-3">
+                        <div className="mt-4 flex flex-wrap gap-3">
                             <motion.button
                                 variants={fadeUp}
                                 type="submit"
                                 className="px-6 py-3 bg-green-600 text-white rounded-lg shadow">
                                 Send Request
                             </motion.button>
+
                             <motion.button
                                 variants={fadeUp}
                                 type="button"
@@ -459,9 +451,9 @@ const Page: FC = () => {
 
             {/* FOOTER */}
             <footer className="py-8 border-t">
-                <div className="max-w-6xl mx-auto px-6 text-center text-sm text-gray-500">
+                <div className="max-w-6xl mx-auto px-4 text-center text-gray-500 text-sm">
                     © {new Date().getFullYear()} Health Is Wealth — Healthy
-                    vending solutions • Privacy • Terms
+                    vending solutions
                 </div>
             </footer>
         </main>
