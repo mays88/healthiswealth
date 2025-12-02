@@ -11,6 +11,20 @@ import Essentia from "@/products/essentia.png";
 import Hint from "@/products/Hint.png";
 import Poppi from "@/products/poppi.png";
 import Owner from "@/products/owner.png";
+import SevenSunday from "@/products/7sunday.png";
+import BrooklynJerky from "@/products/BrooklynJerky.png";
+import RxBar from "@/products/RxBar.png";
+import AllWello from "@/products/allwello.png";
+import LesserEvil from "@/products/lesserevil.png";
+import OliPop from "@/products/olipop.png";
+import OrgChews from "@/products/organicchews.png";
+import PrevailJerky from "@/products/prevailjerky.png";
+import PureOrgBars from "@/products/pureorganicfruitbars.png";
+import SalmonJerky from "@/products/salmonjerky.png";
+import SmashFoods from "@/products/smashfoods.png";
+import StoneySmoothies from "@/products/stoneysmoothies.png";
+import ThatsItBars from "@/products/thatsitbars.png";
+import MidBanner from "@/products/midbanner.png";
 
 const products = [
     {
@@ -35,18 +49,96 @@ const products = [
         id: 4,
         name: "Essentia - Hydroboost",
         img: Essentia,
-        description: "Suppercharged Hydration",
+        description: "Supercharged Hydration",
     },
     {
         id: 5,
+        name: "KAIMANA Salmon Jerky",
+        img: SalmonJerky,
+        description: "Water Infused with Fruit Essences",
+    },
+    {
+        id: 6,
+        name: "Brooklyn Biltlong Jerky",
+        img: BrooklynJerky,
+        description: "Soda's Back, but Better",
+    },
+    {
+        id: 7,
         name: "Hint - Fall in love with water",
         img: Hint,
         description: "Water Infused with Fruit Essences",
     },
     {
-        id: 6,
+        id: 8,
         name: "Poppi - Prebiotic Soda",
         img: Poppi,
+        description: "Soda's Back, but Better",
+    },
+    {
+        id: 9,
+        name: "RxBar",
+        img: RxBar,
+        description: "Water Infused with Fruit Essences",
+    },
+    {
+        id: 10,
+        name: "Organic Fruit Chews",
+        img: OrgChews,
+        description: "Soda's Back, but Better",
+    },
+    {
+        id: 11,
+        name: "Prevail Jerky",
+        img: PrevailJerky,
+        description: "Water Infused with Fruit Essences",
+    },
+    {
+        id: 12,
+        name: "OliPop",
+        img: OliPop,
+        description: "Soda's Back, but Better",
+    },
+    {
+        id: 13,
+        name: "That's It Bars",
+        img: ThatsItBars,
+        description: "Water Infused with Fruit Essences",
+    },
+    {
+        id: 14,
+        name: "Pure Organic Fruit Bars",
+        img: PureOrgBars,
+        description: "Soda's Back, but Better",
+    },
+    {
+        id: 15,
+        name: "StoneyField Organic Smoothie",
+        img: StoneySmoothies,
+        description: "Water Infused with Fruit Essences",
+    },
+    {
+        id: 16,
+        name: "Lesserevil Popcorn",
+        img: LesserEvil,
+        description: "Soda's Back, but Better",
+    },
+    {
+        id: 17,
+        name: "Smash Foods",
+        img: SmashFoods,
+        description: "Soda's Back, but Better",
+    },
+    {
+        id: 18,
+        name: "SevenSunday Cereal Snackies",
+        img: SevenSunday,
+        description: "Water Infused with Fruit Essences",
+    },
+    {
+        id: 19,
+        name: "All Wello Cold Pressed Juice",
+        img: AllWello,
         description: "Soda's Back, but Better",
     },
 ];
