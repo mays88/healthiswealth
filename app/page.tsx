@@ -263,7 +263,7 @@ const Page: FC = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         className="text-2xl sm:text-3xl font-extrabold">
-                        Curated Healthy Picks
+                        Curated Picks
                     </motion.h2>
                     <p className="text-gray-600 mt-2 max-w-xl">
                         Hand-picked snacks and drinks designed to fuel focus and
@@ -357,10 +357,10 @@ const Page: FC = () => {
                         </h3>
 
                         <p className="mt-4 text-gray-600 leading-relaxed">
-                            We make healthy choices easier by bringing smart
-                            vending solutions to schools, fitness centers, and
-                            workplaces. Transparent labeling, allergy-friendly
-                            options, and contactless tech included.
+                            We make choices easier by bringing smart vending
+                            solutions to schools, fitness centers, and
+                            workplaces. Transparent labeling, and contactless
+                            tech included.
                         </p>
 
                         <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600">
@@ -452,8 +452,8 @@ const Page: FC = () => {
             {/* FOOTER */}
             <footer className="py-8 border-t">
                 <div className="max-w-6xl mx-auto px-4 text-center text-gray-500 text-sm">
-                    © {new Date().getFullYear()} Health Is Wealth — Healthy
-                    vending solutions
+                    © {new Date().getFullYear()} Your Choice Vending — A Vending
+                    solution for you
                 </div>
             </footer>
         </main>
