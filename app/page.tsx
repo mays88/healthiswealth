@@ -183,14 +183,14 @@ const Page: FC = () => {
                 <div className="flex items-center justify-between px-4 sm:px-6 py-3">
                     <div className="flex items-center gap-3">
                         <div className="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white font-bold shadow">
-                            HIW
+                            YCV
                         </div>
                         <div>
                             <span className="block font-semibold text-sm">
-                                Health Is Wealth
+                                Your Choice Vending
                             </span>
                             <span className="block text-xs text-gray-500">
-                                Healthy vending solutions
+                                Vending For You!
                             </span>
                         </div>
                     </div>
@@ -227,7 +227,7 @@ const Page: FC = () => {
                         className="w-full">
                         <div className="w-full max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-lg">
                             <iframe
-                                src="https://www.youtube.com/embed/APj9YQ5J0mo"
+                                src="https://www.youtube.com/embed/Ofd8u0Tkigs"
                                 allowFullScreen
                                 title="YouTube Video Player"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -236,12 +236,12 @@ const Page: FC = () => {
                         </div>
 
                         <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold mt-6 text-black/80">
-                            Health Is Wealth
+                            Your Choice Vending
                         </h1>
 
                         <p className="mt-4 text-base sm:text-lg text-black/60 max-w-2xl mx-auto">
-                            Modern vending with smart, healthy options for
-                            schools, offices, gyms, and community spaces.
+                            Modern vending with smart options for schools,
+                            offices, gyms, and community spaces.
                         </p>
 
                         <div className="mt-6 flex flex-wrap justify-center gap-4">
